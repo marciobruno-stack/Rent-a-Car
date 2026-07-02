@@ -80,8 +80,8 @@ text
 
 1. **Clonar o repositório**
    ```bash
-   git clone https://github.com/SEU_USUARIO/Mod5_CRUD.git
-   cd Mod5_CRUD
+   git clone https://github.com/marciobruno-stack/Rent-a-Car.git
+   cd Rent-a-Car
 
     Configurar a string de conexão no appsettings.json
     json
