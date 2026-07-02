@@ -1,33 +1,26 @@
-Aqui está o `README.md` corrigido e formatado corretamente:
+# Rent a Car - Sistema de Gestao de Alugueres
+
+Sistema web desenvolvido em **ASP.NET Core MVC** com **Entity Framework Core** e **MySQL**, que permite gerir alugueres de veiculos. O projeto foi desenvolvido no ambito da UFCD 10792 - Programacao ASP.NET Core MVC.
 
 ---
 
-## `README.md` corrigido
+## Funcionalidades
 
-```markdown
-# 🚗 Rent a Car - Sistema de Gestão de Alugueres
-
-Sistema web desenvolvido em **ASP.NET Core MVC** com **Entity Framework Core** e **MySQL**, que permite gerir alugueres de veículos. O projeto foi desenvolvido no âmbito da UFCD 10792 - Programação ASP.NET Core MVC.
-
----
-
-## 📋 Funcionalidades
-
-- ✅ **CRUD completo** (Criar, Ler, Editar, Excluir) de alugueres
-- 🔍 **Pesquisa dinâmica** por cliente, vendedor ou veículo
-- 📄 **Paginação** (5 registos por página)
-- 📱 **Interface responsiva** com Bootstrap 5
-- 🎨 **Tema personalizado** (Bootswatch - Sandstone)
-- 🏷️ **Ícones** Bootstrap Icons
-- ⚡ **Validação de dados** no lado do servidor e cliente
-- 💬 **Mensagens de sucesso/erro** (TempData)
-- 🗑️ **Confirmação de exclusão** com SweetAlert2
+- CRUD completo (Criar, Ler, Editar, Excluir) de alugueres
+- Pesquisa dinamica por cliente, vendedor ou veiculo
+- Paginacao (5 registos por pagina)
+- Interface responsiva com Bootstrap 5
+- Tema personalizado (Bootswatch - Sandstone)
+- Icones Bootstrap Icons
+- Validacao de dados no lado do servidor e cliente
+- Mensagens de sucesso/erro (TempData)
+- Confirmacao de exclusao com SweetAlert2
 
 ---
 
-## 🛠️ Tecnologias Utilizadas
+## Tecnologias Utilizadas
 
-| Tecnologia | Versão |
+| Tecnologia | Versao |
 |------------|--------|
 | .NET | 10.0 |
 | ASP.NET Core MVC | 10.0 |
@@ -39,7 +32,7 @@ Sistema web desenvolvido em **ASP.NET Core MVC** com **Entity Framework Core** e
 
 ---
 
-## 📁 Estrutura do Projeto
+## Estrutura do Projeto
 
 ```
 Mod5_CRUD/
@@ -75,9 +68,9 @@ Mod5_CRUD/
 
 ---
 
-## ⚙️ Configuração do Ambiente
+## Configuracao do Ambiente
 
-### Pré-requisitos
+### Pre-requisitos
 
 - [.NET 10.0 SDK](https://dotnet.microsoft.com/download/dotnet/10.0)
 - [MySQL Server 8.0+](https://dev.mysql.com/downloads/mysql/)
@@ -86,124 +79,98 @@ Mod5_CRUD/
 
 ### Passos para executar localmente
 
-1. **Clonar o repositório**
-   ```bash
+1. Clonar o repositorio
+   ```
    git clone https://github.com/marciobruno-stack/Rent-a-Car.git
    cd Rent-a-Car
    ```
 
-2. **Configurar a string de conexão no `appsettings.json`**
-   ```json
+2. Configurar a string de conexao no appsettings.json
+   ```
    "ConnectionStrings": {
      "DefaultConnection": "Server=localhost;Database=Mod5_CRUD;Uid=root;Pwd=sua_password;"
    }
    ```
 
-3. **Restaurar os pacotes NuGet**
-   ```bash
+3. Restaurar os pacotes NuGet
+   ```
    dotnet restore
    ```
 
-4. **Aplicar as migrações (criar a base de dados)**
-   ```bash
+4. Aplicar as migracoes (criar a base de dados)
+   ```
    dotnet ef database update
    ```
 
-5. **Executar o projeto**
-   ```bash
+5. Executar o projeto
+   ```
    dotnet run
    ```
 
-6. **Aceder no browser**
+6. Aceder no browser
    ```
    https://localhost:5001
    ```
 
 ---
 
-## 🚀 Publicação (Deploy)
+## Publicacao (Deploy)
 
 ### Local (IIS)
 
 1. Publicar o projeto:
-   ```bash
+   ```
    dotnet publish -c Release -o ./Publish
    ```
-2. Copiar a pasta `Publish` para `C:\inetpub\wwwroot\RentACar`
-3. Criar um novo Site no **IIS Manager**
-4. Configurar o **Application Pool** para **"Sem Código Gerenciado"**
-5. Testar em `http://localhost:8080`
+2. Copiar a pasta Publish para C:\inetpub\wwwroot\RentACar
+3. Criar um novo Site no IIS Manager
+4. Configurar o Application Pool para "Sem Codigo Gerenciado"
+5. Testar em http://localhost:8080
 
 ### Azure App Service
 
 1. Criar uma Web App no Azure
 2. Publicar diretamente pelo Visual Studio ou VS Code
-3. Configurar a string de conexão nas definições da App Service
+3. Configurar a string de conexao nas definicoes da App Service
 
 ---
 
-## 📸 Screenshots
+## Contribuicao
 
-### Página de Listagem (Index)
-![Listagem de Alugueres](docs/screenshot-index.png)
-
-### Página de Cadastro
-![Cadastro de Aluguer](docs/screenshot-cadastro.png)
-
-### Página de Edição
-![Edição de Aluguer](docs/screenshot-editar.png)
+1. Fazer um Fork do projeto
+2. Criar uma Branch para a sua funcionalidade
+3. Fazer Commit das alteracoes
+4. Fazer Push para a Branch
+5. Abrir um Pull Request
 
 ---
 
-## 🤝 Contribuição
+## Licenca
 
-1. Fazer um **Fork** do projeto
-2. Criar uma **Branch** para a sua funcionalidade (`git checkout -b feature/nova-funcionalidade`)
-3. Fazer **Commit** das alterações (`git commit -m 'Adiciona nova funcionalidade'`)
-4. Fazer **Push** para a Branch (`git push origin feature/nova-funcionalidade`)
-5. Abrir um **Pull Request**
+Este projeto foi desenvolvido para fins educacionais no ambito da UFCD 10792 - Programacao ASP.NET Core MVC.
 
 ---
 
-## 📝 Licença
+## Autor
 
-Este projeto foi desenvolvido para fins educacionais no âmbito da UFCD 10792 - Programação ASP.NET Core MVC.
-
----
-
-## 👨‍💻 Autor
-
-**Marcio Bruno**  
-Aluno da UFCD 10792 - Programação ASP.NET Core MVC
+**Marcio Bruno**
+Aluno da UFCD 10792 - Programacao ASP.NET Core MVC
 
 ---
 
-## 🙏 Agradecimentos
+## Agradecimentos
 
-- Formadora: Cláudia Nunes
-
----
-
-## 📞 Contacto
-
-Para dúvidas ou sugestões, podes abrir uma **Issue** no GitHub ou contactar diretamente.
+- Formadora: Claudia Nunes
+- Todos os colegas que contribuiram com feedback e sugestoes
 
 ---
 
-**© 2026 - Rent a Car | Todos os direitos reservados**
+## Contacto
+
+Para duvidas ou sugestoes, pode abrir uma Issue no GitHub ou contactar diretamente.
+
+---
+
+© 2026 - Rent a Car | Todos os direitos reservados
 ```
-
----
-
-## Alterações feitas
-
-| Problema | Correção |
-|----------|----------|
-| Estrutura do projeto mal formatada | Adicionadas ` ``` ` para código e indentação correta |
-| URL do repositório incorreta | Atualizada para `https://github.com/marciobruno-stack/Rent-a-Car.git` |
-| Falta de separação entre passos | Adicionados números e espaçamento |
-| Texto solto sem formatação | Corrigida a sintaxe Markdown |
-| Nome do projeto inconsistente | Uniformizado para "Rent a Car" |
-
----
 
