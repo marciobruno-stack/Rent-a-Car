@@ -1,4 +1,12 @@
+<<<<<<< HEAD
 # 🚗 Rent a Car - Sistema de Gestão de Aluguéis
+=======
+---
+
+
+```markdown
+# 🚗 Rent a Car - Sistema de Gestão de Alugueres
+>>>>>>> 916e4c85fce446750b3b4d808fe7cc431490226c
 
 ![.NET](https://img.shields.io/badge/.NET-10.0-512BD4?style=for-the-badge&logo=dotnet&logoColor=white)
 ![ASP.NET Core](https://img.shields.io/badge/ASP.NET_Core-10.0-512BD4?style=for-the-badge&logo=dotnet&logoColor=white)
