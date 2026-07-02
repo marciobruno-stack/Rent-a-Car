@@ -161,7 +161,6 @@ Aluno da UFCD 10792 - Programacao ASP.NET Core MVC
 ## Agradecimentos
 
 - Formadora: Claudia Nunes
-- Todos os colegas que contribuiram com feedback e sugestoes
 
 ---
 
