@@ -1,3 +1,76 @@
+<div align="center">
+🚗 Rent a Car — Gestão de Alugueres
+
+Aplicação ASP.NET Core MVC com Entity Framework Core e MySQL para gestão de alugueres de veículos.
+
+</div>
+✨ Funcionalidades
+
+    CRUD de alugueres
+
+    Pesquisa dinâmica
+
+    Paginação
+
+    Interface responsiva
+
+    Validação cliente/servidor
+
+    SweetAlert2 para confirmações
+
+🛠️ Tecnologias
+
+    .NET 10
+
+    ASP.NET Core MVC
+
+    Entity Framework Core
+
+    MySQL
+
+    Bootstrap
+
+    SweetAlert2
+
+🧩 Arquitetura (MVC)
+
+<div align="center">
+Código
+
+Views → Controllers → Models → DbContext → MySQL
+
+</div>
+📁 Estrutura
+Código
+
+Mod5_CRUD/
+├── Controllers/
+├── Models/
+├── Data/
+├── Views/
+├── wwwroot/
+└── Program.cs
+
+⚙️ Como Executar
+bash
+
+git clone https://github.com/marciobruno-stack/Rent-a-Car.git
+cd Rent-a-Car
+dotnet restore
+dotnet ef database update
+dotnet run
+
+Configurar ligação no appsettings.json:
+json
+
+"DefaultConnection": "Server=localhost;Database=Mod5_CRUD;Uid=root;Pwd=sua_password;"
+
+👨‍💻 Autor
+
+Marcio Bruno
+📞 Contacto
+
+Abra uma Issue no GitHub para dúvidas ou sugestões.
 🚗 Rent a Car — Gestão de Alugueres
 
 https://img.shields.io/github/repo-size/marciobruno-stack/Rent-a-Car?style=flat-square
