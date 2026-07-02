@@ -235,5 +235,3 @@ Para dúvidas ou sugestões, pode abrir uma **Issue** no GitHub ou contactar dir
 **© 2026 - Rent a Car | Todos os direitos reservados** 🚗
 ```
 
-
-
