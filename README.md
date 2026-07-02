@@ -1,12 +1,4 @@
-<<<<<<< HEAD
-# 🚗 Rent a Car - Sistema de Gestão de Aluguéis
-=======
----
-
-
-```markdown
 # 🚗 Rent a Car - Sistema de Gestão de Alugueres
->>>>>>> 916e4c85fce446750b3b4d808fe7cc431490226c
 
 ![.NET](https://img.shields.io/badge/.NET-10.0-512BD4?style=for-the-badge&logo=dotnet&logoColor=white)
 ![ASP.NET Core](https://img.shields.io/badge/ASP.NET_Core-10.0-512BD4?style=for-the-badge&logo=dotnet&logoColor=white)
@@ -217,6 +209,7 @@ Este projeto foi desenvolvido para fins educacionais no âmbito da **UFCD 10792 
 ## 🙏 Agradecimentos
 
 - 👩‍🏫 **Formadora:** Cláudia Nunes
+- 🤝 **Colegas:** Todos os que contribuíram com feedback e sugestões
 - 📚 **Recursos:** Documentação oficial da Microsoft, Bootswatch, Bootstrap Icons
 
 ---
@@ -236,4 +229,3 @@ Para dúvidas ou sugestões, pode abrir uma **Issue** no GitHub ou contactar dir
 ---
 
 **© 2026 - Rent a Car | Todos os direitos reservados** 🚗
-
