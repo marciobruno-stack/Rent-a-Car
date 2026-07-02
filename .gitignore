@@ -1,0 +1,44 @@
+# .NET
+bin/
+obj/
+*.user
+*.suo
+*.cache
+*.db
+*.log
+*.tmp
+*.pid
+*.seed
+*.pid.lock
+*.pdb
+*.dll
+*.exe
+*.so
+*.dylib
+*.nupkg
+*.nuspec
+*.snupkg
+*.xml
+*.json
+*.config
+*.csproj.user
+*.sln.docstates
+
+# Visual Studio
+.vs/
+.vscode/
+*.sln.ide
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+
+# Publishing
+Publish/
+*.zip
+*.7z
+
+# Environment
+.env
+appsettings.Development.json

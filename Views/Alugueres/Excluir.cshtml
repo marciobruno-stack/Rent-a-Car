@@ -1,0 +1,46 @@
+﻿@model Mod5_CRUD.Models.AlugueresModel
+
+@{
+    ViewData["Title"] = "Excluir Alugueres";
+}
+
+<div class="container bg-dark p-5 rounded-5">
+    <div class="mb-5 text-center text-light bg-dark">
+        <h1>Excluir Alugueres</h1>
+    </div>
+
+    <form method="post" asp-controller="Alugueres" asp-action="Excluir">
+        <input type="hidden" asp-for="Id" />
+
+        <h2 class="text-light text-center">Tem a certeza que deseja excluir?</h2>
+
+        <div class="form-group text-light">
+            <label for="Cliente">Cliente</label>
+            <input type="text" class="form-control" asp-for="Cliente" id="Cliente" placeholder="Cliente do Aluguer" disabled>
+            <span asp-validation-for="Cliente" class="text-danger"></span>
+        </div>
+
+        <div class="form-group text-light">
+            <label for="Vendedor">Vendedor</label>
+            <input type="text" class="form-control" asp-for="Vendedor" id="Vendedor" placeholder="Vendedor do Aluguer" disabled>
+            <span asp-validation-for="Vendedor" class="text-danger"></span>
+        </div>
+
+        <div class="form-group text-light">
+            <label for="Veiculo">Veículo</label>
+            <input type="text" class="form-control" asp-for="Veiculo" id="Veiculo" placeholder="Veículo do Aluguer" disabled>
+            <span asp-validation-for="Veiculo" class="text-danger"></span>
+        </div>
+
+        <div class="form-group text-light">
+            <label for="DataAluguer">Data do Aluguer</label>
+            <input type="date" class="form-control" asp-for="DataAluguer" id="DataAluguer" disabled>
+            <span asp-validation-for="DataAluguer" class="text-danger"></span>
+        </div>
+
+        <div class="d-flex gap-5 mt-5">
+            <button type="submit" class="btn btn-danger w-50">Excluir Aluguer</button>
+            <a asp-controller="Alugueres" asp-action="Index" class="btn btn-primary w-50">Voltar</a>
+        </div>
+    </form>
+</div>
