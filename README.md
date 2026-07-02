@@ -1,206 +1,104 @@
-Aqui está o `README.md` com **emojis** e **badges (gifs/ícones)** para as tecnologias utilizadas:
+🚗 Rent a Car — Gestão de Alugueres
 
----
+https://img.shields.io/github/repo-size/marciobruno-stack/Rent-a-Car?style=flat-square
+https://img.shields.io/github/languages/count/marciobruno-stack/Rent-a-Car?style=flat-square
+https://img.shields.io/github/languages/top/marciobruno-stack/Rent-a-Car?style=flat-square
+https://img.shields.io/github/last-commit/marciobruno-stack/Rent-a-Car?style=flat-square
+https://img.shields.io/github/issues/marciobruno-stack/Rent-a-Car?style=flat-square
+https://img.shields.io/github/license/marciobruno-stack/Rent-a-Car?style=flat-square
 
-```markdown
-# 🚗 Rent a Car - Sistema de Gestão de Alugueres
+Aplicação ASP.NET Core MVC com Entity Framework Core e MySQL, desenvolvida para gestão eficiente de alugueres de veículos.
+✨ Funcionalidades
 
-![.NET](https://img.shields.io/badge/.NET-10.0-512BD4?style=for-the-badge&logo=dotnet&logoColor=white)
-![ASP.NET Core](https://img.shields.io/badge/ASP.NET_Core-10.0-512BD4?style=for-the-badge&logo=dotnet&logoColor=white)
-![MySQL](https://img.shields.io/badge/MySQL-8.0+-4479A1?style=for-the-badge&logo=mysql&logoColor=white)
-![Bootstrap](https://img.shields.io/badge/Bootstrap-5.3.0-7952B3?style=for-the-badge&logo=bootstrap&logoColor=white)
-![SweetAlert2](https://img.shields.io/badge/SweetAlert2-11.x-7B16FF?style=for-the-badge&logo=sweetalert&logoColor=white)
+    CRUD de alugueres
 
-Sistema web desenvolvido em **ASP.NET Core MVC** com **Entity Framework Core** e **MySQL**, que permite gerir alugueres de veículos. O projeto foi desenvolvido no âmbito da UFCD 10792 - Programação ASP.NET Core MVC.
+    Pesquisa dinâmica
 
----
+    Paginação
 
-## 📋 Funcionalidades
+    Interface responsiva
 
-- ✅ **CRUD completo** (Criar, Ler, Editar, Excluir) de alugueres
-- 🔍 **Pesquisa dinâmica** por cliente, vendedor ou veículo
-- 📄 **Paginação** (5 registos por página)
-- 📱 **Interface responsiva** com Bootstrap 5
-- 🎨 **Tema personalizado** (Bootswatch - Sandstone)
-- 🏷️ **Ícones** Bootstrap Icons
-- ⚡ **Validação de dados** no lado do servidor e cliente
-- 💬 **Mensagens de sucesso/erro** (TempData)
-- 🗑️ **Confirmação de exclusão** com SweetAlert2
+    Validação cliente/servidor
 
----
+    Confirmação de exclusão com SweetAlert2
 
-## 🛠️ Tecnologias Utilizadas
+🛠️ Tecnologias
 
-| Tecnologia | Versão | Ícone |
-|------------|--------|-------|
-| .NET | 10.0 | <img src="https://img.icons8.com/color/48/000000/net-framework.png" width="24"/> |
-| ASP.NET Core MVC | 10.0 | <img src="https://img.icons8.com/color/48/000000/asp.png" width="24"/> |
-| Entity Framework Core | 9.0.0 | <img src="https://img.icons8.com/color/48/000000/entity-framework.png" width="24"/> |
-| MySQL | 8.0+ | <img src="https://img.icons8.com/color/48/000000/mysql-logo.png" width="24"/> |
-| Pomelo.EntityFrameworkCore.MySql | 9.0.0 | <img src="https://img.icons8.com/color/48/000000/mysql.png" width="24"/> |
-| Bootstrap | 5.3.0 | <img src="https://img.icons8.com/color/48/000000/bootstrap.png" width="24"/> |
-| SweetAlert2 | 11.x | <img src="https://img.icons8.com/color/48/000000/alert.png" width="24"/> |
+    .NET 10
 
----
+    ASP.NET Core MVC
 
-## 📁 Estrutura do Projeto
+    Entity Framework Core
 
-```
-📁 Mod5_CRUD/
-├── 📁 Controllers/
-│   ├── 📄 AlugueresController.cs
-│   └── 📄 HomeController.cs
-├── 📁 Models/
-│   ├── 📄 AlugueresModel.cs
-│   └── 📄 ErrorViewModel.cs
-├── 📁 Data/
-│   └── 📄 ApplicationDbContext.cs
-├── 📁 Views/
-│   ├── 📁 Alugueres/
-│   │   ├── 📄 Index.cshtml
-│   │   ├── 📄 Cadastrar.cshtml
-│   │   ├── 📄 Editar.cshtml
-│   │   └── 📄 Excluir.cshtml
-│   ├── 📁 Home/
-│   │   └── 📄 Index.cshtml
-│   └── 📁 Shared/
-│       └── 📄 _Layout.cshtml
-├── 📁 wwwroot/
-│   ├── 📁 css/
-│   ├── 📁 img/
-│   ├── 📁 js/
-│   └── 📁 lib/
-├── 📁 Migrations/
-├── 📄 appsettings.json
-├── 📄 appsettings.Development.json
-├── 📄 Program.cs
-└── 📄 Mod5_CRUD.csproj
-```
+    MySQL
 
----
+    Bootstrap
 
-## ⚙️ Configuração do Ambiente
+    SweetAlert2
 
-### 📋 Pré-requisitos
+🧩 Arquitetura do Sistema
 
-- [.NET 10.0 SDK](https://dotnet.microsoft.com/download/dotnet/10.0)
-- [MySQL Server 8.0+](https://dev.mysql.com/downloads/mysql/)
-- [MySQL Workbench](https://dev.mysql.com/downloads/workbench/) (opcional)
-- [Visual Studio 2022](https://visualstudio.microsoft.com/) ou [VS Code](https://code.visualstudio.com/)
+A aplicação segue o padrão MVC, garantindo organização clara e separação de responsabilidades.
+🎨 Diagrama Visual Premium
+Código
 
-### 🚀 Passos para executar localmente
+                         ┌──────────────────────────┐
+                         │         🖥️ Views         │
+                         │  (Interface do Utilizador)│
+                         └──────────────┬───────────┘
+                                        │
+                                        ▼
+                         ┌──────────────────────────┐
+                         │      🎯 Controllers       │
+                         │ (Lógica + Orquestração)  │
+                         └──────────────┬───────────┘
+                                        │
+                                        ▼
+                         ┌──────────────────────────┐
+                         │        📦 Models         │
+                         │ (Entidades + Validação)  │
+                         └──────────────┬───────────┘
+                                        │
+                                        ▼
+                         ┌──────────────────────────┐
+                         │     🗄️ DbContext (EF)     │
+                         │ (Mapeamento + Queries)    │
+                         └──────────────┬───────────┘
+                                        │
+                                        ▼
+                         ┌──────────────────────────┐
+                         │        🐬 MySQL           │
+                         │ (Base de Dados Real)      │
+                         └───────────────────────────┘
 
-1. **Clonar o repositório**
-   ```bash
-   git clone https://github.com/marciobruno-stack/Rent-a-Car.git
-   cd Rent-a-Car
-   ```
+📁 Estrutura
+Código
 
-2. **Configurar a string de conexão no `appsettings.json`**
-   ```json
-   "ConnectionStrings": {
-     "DefaultConnection": "Server=localhost;Database=Mod5_CRUD;Uid=root;Pwd=sua_password;"
-   }
-   ```
+Mod5_CRUD/
+├── Controllers/
+├── Models/
+├── Data/
+├── Views/
+├── wwwroot/
+└── Program.cs
 
-3. **Restaurar os pacotes NuGet**
-   ```bash
-   dotnet restore
-   ```
+⚙️ Como Executar
+bash
 
-4. **Aplicar as migrações (criar a base de dados)**
-   ```bash
-   dotnet ef database update
-   ```
+git clone https://github.com/marciobruno-stack/Rent-a-Car.git
+cd Rent-a-Car
+dotnet restore
+dotnet ef database update
+dotnet run
 
-5. **Executar o projeto**
-   ```bash
-   dotnet run
-   ```
+Configurar ligação no appsettings.json:
+json
 
-6. **Aceder no browser**
-   ```
-   https://localhost:5001
-   ```
+"DefaultConnection": "Server=localhost;Database=Mod5_CRUD;Uid=root;Pwd=sua_password;"
 
----
+👨‍💻 Autor
 
-## 🚀 Publicação (Deploy)
+Marcio Bruno
+📞 Contacto
 
-### 🖥️ Local (IIS)
-
-1. Publicar o projeto:
-   ```bash
-   dotnet publish -c Release -o ./Publish
-   ```
-2. Copiar a pasta `Publish` para `C:\inetpub\wwwroot\RentACar`
-3. Criar um novo Site no **IIS Manager**
-4. Configurar o **Application Pool** para **"Sem Código Gerenciado"**
-5. Testar em `http://localhost:8080`
-
-### ☁️ Azure App Service
-
-1. Criar uma Web App no Azure
-2. Publicar diretamente pelo Visual Studio ou VS Code
-3. Configurar a string de conexão nas definições da App Service
-
----
-
-## 🤝 Contribuição
-
-1. 🍴 Fazer um **Fork** do projeto
-2. 🌿 Criar uma **Branch** para a sua funcionalidade (`git checkout -b feature/nova-funcionalidade`)
-3. ✏️ Fazer **Commit** das alterações (`git commit -m 'Adiciona nova funcionalidade'`)
-4. 📤 Fazer **Push** para a Branch (`git push origin feature/nova-funcionalidade`)
-5. 🔄 Abrir um **Pull Request**
-
----
-
-## 📝 Licença
-
-Este projeto foi desenvolvido para fins educacionais no âmbito da UFCD 10792 - Programação ASP.NET Core MVC.
-
----
-
-## 👨‍💻 Autor
-
-**Marcio Bruno**  
-👨‍🎓 Aluno da UFCD 10792 - Programação ASP.NET Core MVC
-
----
-
-## 🙏 Agradecimentos
-
-- 👩‍🏫 Formadora: Cláudia Nunes
-- 🤝 Todos os colegas que contribuíram com feedback e sugestões
-
----
-
-## 📞 Contacto
-
-Para dúvidas ou sugestões, pode abrir uma **Issue** no GitHub ou contactar diretamente.
-
----
-
-**© 2026 - Rent a Car | Todos os direitos reservados** 🚗
-```
-
----
-
-## 📸 Exemplo visual no GitHub
-
-### Badges (no topo)
-![.NET](https://img.shields.io/badge/.NET-10.0-512BD4?style=for-the-badge&logo=dotnet&logoColor=white)
-![ASP.NET Core](https://img.shields.io/badge/ASP.NET_Core-10.0-512BD4?style=for-the-badge&logo=dotnet&logoColor=white)
-![MySQL](https://img.shields.io/badge/MySQL-8.0+-4479A1?style=for-the-badge&logo=mysql&logoColor=white)
-
-### Estrutura com ícones
-```
-📁 Mod5_CRUD/
-├── 📁 Controllers/
-│   ├── 📄 AlugueresController.cs
-│   └── 📄 HomeController.cs
-```
-
-
-
+Abra uma Issue no GitHub para dúvidas ou sugestões.
